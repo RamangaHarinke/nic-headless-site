@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,500;0,700;0,800;1,500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*--------------------main layout-------------- */
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  flex: 0 0 auto; /* Header does not grow or shrink, it's a fixed height */
+}
+
+.body {
+  flex: 1; /* Body grows to fill available space */
+  margin-top: 10px;
+}
+
+.footer {
+  flex: 0 0 auto; /* Footer does not grow or shrink, it's a fixed height */
+  width: 100%; 
+  margin-top: 40px;
+}
+
+/*--------------------main layout END-------------- */
+
+/*---------------------footer items---------------- */
+.footer-link {
+ 
+  background-color:darkslategray;
+  width: 100%; 
+  min-height: 200px;
+  padding-bottom: 30px;
+  color: white;
+
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  min-height: 200px;
+}
+.footer-link .links{
+  padding-top: 4px;
+
+}
+
+.footer-copyright {
+  padding-top: 30px;
+  flex: 0 0 auto; 
+  background-color: steelblue;
+  width: 100%; 
+  min-height: 60px;
+}
+.white-text{
+  color: white;
+}
+
+.centered{
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+}
+ /*------------------footer items END---------------- */
+ /*------------------header items---------------- */
+.header-box{
+ padding-top: 5px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.header-box .items-logo{
+      padding-top:10px;
+      justify-content: center;
+    
+}
+.header-box .items-title{
+  padding-top:30px;
+  justify-content: center;
+  font-size: 20px;
+}
+.header-box .items-search{
+  padding-top:40px;
+  justify-content: center;
+  font-size: 20px;
+}
+.header-container{
+  width:auto;
+  max-height:880px;
+  background-color: blanchedalmond;
+}
+.header-div {
+  top: 20px;
+  left: 20px;
+  width: 100%;
+  min-height: 137px;
+  background-color: steelblue; /* Optional background color */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+}
+.header-items{
+  display: flex; /* or "inline" */
+  margin-right: 100px; /* Optional spacing between items */
+  margin-left: 100px;
+
+  align-items: center;
+  width: 100%;
+
+}
+ /*------------------header items END---------------- */
+
+/* --------------------header link bar-------------------*/
+.header-link-bar {
+  width: 100%;
+  height: 40px;
+  background-color:darkslategray;
+  color: white;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  display: flex; 
+  justify-content: center; 
+}
+.menu-item {
+  margin-right: 60px; 
+  min-width: 100px;
+}
+.menu-link {
+  text-decoration: none;
+  color: #fdfdfd; 
+ 
+  font-weight: bold;
+  font-size: 14px; 
+} 
+/*----------------------------------header link bar end-----------*/
+
+
+/*----------------------------------hero section----------------------------*/
+.hero-section{
+    
+  background-image: url("/rectangle-7@2x.png"); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  
+}
+
+.image-fill {
+
+  object-fit: cover; /* Crop and center the image while maintaining aspect ratio */
+  position: center; /* Position the image inside the container */
+
+}
+
+.hero-div{
+
+  min-height: 800px;
+  height: 20px;
+
+}
+/*--------------------------------hero section END-----------------------*/
+
+
+/*----------------------------------body start------------------------------*/
+.stories-div{
+  max-width:100%;
+  min-height: 0px;
+ 
+}
+
+.story-div{
+  min-height: 10px;
+  width:100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top:5%;
+  background-color: azure;
+  position: relative;
+ 
+}
+
+.facebook-head{
+  width:100%;
+  display: flex;
+}
+.facebook-icon{
+  
+  min-height: 40px;
+  width:10%;
+}
+.facebook-date{
+  padding-left: 10%;
+  padding-top: 3px;
+  min-height: 40px;
+  width:90%;
+}
+.facebook-highlight{
+  padding-top: 10px;
+  min-height: 30px;
+  width: 100%;
+}
+
+.horizontal-separator {
+  border: none; /* Remove the default border */
+  height: 2px; /* Adjust the height as needed */
+  background-color: #b2afaf; /* Choose your desired color */
+  margin: 20px 0; /* Add margin for spacing */
+  
+}
+.social-media{
+  margin-top: 20px;
+  height: 300px;
+  background-color:#D9D9D9;;
+  border-radius: 50px;
+
+}
+.social-title{
+  align-items: center;
+  justify-content: center; 
+  padding-top: 50px;  
+}
+
+.social-flexbox{  
+  display: flex;
+  height: 200px;
+  padding-left: 10%;
+  padding-right: 10%;
+  align-items: center;
+  justify-content: center;
+}
+.social-icons{
+  padding: 15px;
+  height: 90px;
+  width: 90px;
+}
+.story-pic{/*-------STORY pic----------------------*/
+  max-width: 220px;
+  max-height: 220px;
+  align-items:center ;
+  justify-content: center;
+}
+
+.story-highlight{
+  margin-top: 20px;
+  max-width: 250px;
+}
+
+
+.left-text {
+  padding-left: 10%;
+  justify-content: center; /* Horizontal centering */
+  align-items: left; /* Vertical centering */
+  /* Optional: Center within the viewport height */
+}
+.centered-text {
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: left; /* Vertical centering */
+  /* Optional: Center within the viewport height */
+}
+
+/****news*****/
+.flexbox{
+  display: flex;
+  min-height: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  align-items: center;
+  justify-content: center;
+}
+.news-box{
+  padding-top: 40px;
+  min-height: 10px;
+  background-color: rgb(220, 245, 223);
+  margin-left: auto;
+  max-width: 100%;
+}
+
+.story-pic2{
+ padding: 10px;
+ 
+
+ width: 300px; /* Set your desired width */
+ height: 200px; /* Set your desired height */
+ overflow: hidden; /* Hide any overflow outside the container */
+
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.story-title{
+  margin-top: 10px;
+  background-color: bisque;
+  font-weight: 100px;
+  font-size:20px;
+
+}
+.story-highlight3{
+  margin-top: 5px; 
+  min-height: 20px;
+}
+
+.story-highlights{
+ 
+  width: 60%;
+  padding: 10px;
+  min-height: 20px;
+
+}
+.story-date{
+  margin-top: 0;
+}
+
+.story-horizontal-separator {
+  border: none; /* Remove the default border */
+  height: 2px; /* Adjust the height as needed */
+  background-color: #7b2626; /* Choose your desired color */
+  
+  
+}
+
+/****news view*****/
+.main-news{
+min-height: 50px;
+padding: 50px 150px 50px 150px;
+}
+.news-title{
+ 
+  min-height: 50px;
+  font-size: 20px;
+  justify-content: center;
+}
+.news-date{
+  
+  min-height: 50px;
+}
+.news-image{
+
+  height: inherit;
+}
+.news-sub{
+
+  min-height: 50px;
+  padding-top: 10px;
+}
+.news{
+  
+  min-height: 50px;
+  padding-top: 40px;
+}
+
+/*/------------------------------------------------------------------------------------------------------------------*/
+/*--------gallery---------------------*/
+
+.gallery-box{
+
+  min-height: 10px;
+  max-width: 1000px;
+  margin-left: auto;
+
+}
+
+.align-div {
+
+  display: flex; /* Use flexbox to align block-level elements */
+  align-items: center; /* Stack block-level elements vertically */
+  justify-content:center; /* Align elements to the bottom of the div */
+  width: 100%;
+
+}
+
+.gallery-story-pic{ 
+    padding: 10px;  
+     margin-top: 0px;
+     border-radius: 40px;
+     min-width: 40%;
+     min-height: 100%;
+}
+
+/*==-------new code */
+.contact-form{
+  background-color: azure;
+ 
+  padding:5%;
+}

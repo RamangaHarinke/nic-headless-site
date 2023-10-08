@@ -1,0 +1,11 @@
+/* Custom CSS */
+.headerdiv {
+    position: fixed; /* Use 'absolute' for relative to parent */
+    top: 20px;
+    left: 20px;
+    width: 300px;
+    height: 200px;
+    background-color: #af2626; /* Optional background color */
+    /* Add more styling as needed */
+  }
+  
